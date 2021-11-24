@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenge.mysrtp.entity.PostsMapper">
+
+    <resultMap id="Post" type="com.chenge.mysrtp.entity.Posts">
+        <!--id指定主键列的封装规则,return指定普通列的封装规则
+        column:数据库列名
+        property:对应的javabean属性
+        -->
+        <result column="description" property="description"/>
+        <result column="tags" property="tags"/>
+        <result column="owner" property="owner"/>
+        <result column="comments" property="comments"/>
+    </resultMap>
+
+<!--    <sql id="InsertFields">-->
+<!--        description, tags, owner, comments-->
+<!--    </sql>-->
+
+<!--    <insert id="insertPosts">-->
+<!--        insert into posts (<include refid="InsertFields"></include>)-->
+<!--        values (#{description},#{tags},#{owner},#{comments})-->
+<!--    </insert>-->
+
+<!--    <update id="updateComments">-->
+<!--        update posts set comments = #{comments}-->
+<!--        where id = #{id}-->
+<!--    </update>-->
+
+<!--    <select id="selectPosts" resultMap="Post">-->
+<!--        select * from posts where description like %#{description}%-->
+<!--    </select>-->
+
+
+</mapper>

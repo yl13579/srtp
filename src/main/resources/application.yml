@@ -12,25 +12,25 @@ spring:
     username: root
     password: 88888888
     type: com.alibaba.druid.pool.DruidDataSource
-  #        filters: stat
-  #        maxActive: 20
-  #        initialSize: 1
-  #        maxWait: 60000
-  #        minIdle: 1
-  #        timeBetweenEvictionRunsMillis: 60000
-  #        minEvictableIdleTimeMillis: 300000
-  #        validationQuery: select 'x'
-  #        testWhileIdle: true
-  #        testOnBorrow: false
-  #        testOnReturn: false
-  #        poolPreparedStatements: true
-  #        maxOpenPreparedStatements: 20
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
   mail:
-    host: smtp.qq.com
-    port: 25
-    #        port: 465
-    username: 1445079235@qq.com
-    password: hgohrxiylgauiede
+  #    host: smtp.qq.com
+  #    port: 25
+  #    #        port: 465
+  #    username: 1445079235@qq.com
+  #    password: hgohrxiylgauiede
 
   thymeleaf:
     cache: false
@@ -43,7 +43,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.lican.tagrectool.entity
+  type-aliases-package: com.chenge.mysrtp.entity
 
 #community:
 #  path:
