@@ -1,0 +1,57 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /community
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/srtp?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true
+    username: root
+    password: 88888888
+    type: com.alibaba.druid.pool.DruidDataSource
+  #        filters: stat
+  #        maxActive: 20
+  #        initialSize: 1
+  #        maxWait: 60000
+  #        minIdle: 1
+  #        timeBetweenEvictionRunsMillis: 60000
+  #        minEvictableIdleTimeMillis: 300000
+  #        validationQuery: select 'x'
+  #        testWhileIdle: true
+  #        testOnBorrow: false
+  #        testOnReturn: false
+  #        poolPreparedStatements: true
+  #        maxOpenPreparedStatements: 20
+  mail:
+    host: smtp.qq.com
+    port: 25
+    #        port: 465
+    username: 1445079235@qq.com
+    password: hgohrxiylgauiede
+
+  thymeleaf:
+    cache: false
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.lican.tagrectool.entity
+
+#community:
+#  path:
+#    domain: http://localhost:8080
+#    uploadPath: C:/Users/kingtiger/Desktop
+#
+#
+#caffeine:
+#  posts:
+#    max-size: 1
+#    expire-seconds: 180
